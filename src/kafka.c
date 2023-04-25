@@ -12,7 +12,6 @@ __declspec(dllexport) int luaopen_kafka(lua_State *L)
 int luaopen_kafka(lua_State *L)
 #endif
 {
-    luaL_checkversion(L);
     luaL_newmetatable(L, "kafka");
     luaL_newlib(L, funcs);
     return 1;
